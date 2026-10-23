@@ -20,6 +20,8 @@ const items=[
  {n:'Siena',col:'Mediterránea',tipo:'Vestido',precio:16990,img:'siena'},
  {n:'Amalfi',col:'Mediterránea',tipo:'Vestido',precio:16990,img:'amalfi'}
 ];
+
+
 const CART_KEY='casa_mares_cart_v1';
 let cartItems={};
 try {
