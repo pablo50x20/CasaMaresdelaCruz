@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap');
+:root{--cream:#f6f2ec;--white:#fffdfa;--ink:#38372e;--olive:#85886e;--rust:#bf785c;--muted:#797569;--line:#dfd8cc}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--cream);color:var(--ink);font-family:'DM Sans',Arial,sans-serif}a{color:inherit;text-decoration:none}button,input,select{font:inherit}button{cursor:pointer}.wrap{max-width:1230px;width:calc(100% - 44px);margin:auto}.strip{background:var(--olive);color:#fff;text-align:center;padding:10px;font-size:11px;letter-spacing:.24em;text-transform:uppercase}.head{background:rgba(246,242,236,.96);position:sticky;top:0;z-index:20;border-bottom:1px solid var(--line);backdrop-filter:blur(10px)}.nav{height:82px;display:flex;justify-content:space-between;align-items:center;gap:18px}.brand{text-align:center;line-height:1;font-family:Georgia,serif;font-size:25px;letter-spacing:.06em}.brand small{display:block;font-size:12px;letter-spacing:.23em;margin-top:4px}.navitems{display:flex;gap:27px;font-size:12px;letter-spacing:.08em;text-transform:uppercase}.navitems a:hover{color:var(--rust)}.outline{border:1px solid var(--rust);padding:12px 16px;color:var(--rust);background:transparent;font-size:12px;text-transform:uppercase;letter-spacing:.1em}.outline:hover{background:var(--rust);color:white}.hero{display:grid;grid-template-columns:45% 55%;min-height:570px;margin:24px auto 70px;background:#eee6da;overflow:hidden}.hero-text{display:flex;justify-content:center;flex-direction:column;padding:70px clamp(26px,5.3vw,80px)}.kicker{font-size:11px;color:var(--rust);text-transform:uppercase;letter-spacing:.28em;font-weight:600}.hero h1{font:400 clamp(44px,5.2vw,77px)/1.11 'Playfair Display',Georgia,serif;letter-spacing:-.035em;margin:24px 0}.hero p{font:italic 22px/1.55 Georgia,serif;color:#b37156;max-width:380px}.hero small{display:block;margin:15px 0 32px;color:#6e695d;line-height:1.7}.primary{display:inline-flex;align-items:center;justify-content:center;background:var(--ink);color:white;padding:15px 24px;letter-spacing:.12em;text-transform:uppercase;font-size:11px;border:0;width:fit-content}.primary:hover{background:var(--rust)}.hero-photo{background:linear-gradient(140deg,#cfbfaa,#ebe2d4);position:relative;min-height:400px}.hero-photo img{height:100%;width:100%;position:absolute;inset:0;object-fit:cover;object-position:center 26%}.hero-photo:after{content:'PRIMAVERA · VERANO 2026';position:absolute;bottom:22px;right:24px;font-size:11px;letter-spacing:.23em;color:#fff;text-shadow:0 1px 8px #2229}.sectiontop{display:flex;align-items:end;justify-content:space-between;margin-bottom:23px;gap:20px}.sectiontop h2,.story h2{font:400 clamp(32px,3.4vw,48px) 'Playfair Display',Georgia,serif;margin:10px 0 0}.count{color:var(--muted);font-size:13px}.tools{display:flex;gap:12px;flex-wrap:wrap;align-items:center;margin-bottom:20px}.tools input{flex:1;min-width:190px}.tools input,.tools select{height:47px;border:1px solid var(--line);background:var(--white);padding:0 15px;outline:0;color:var(--ink)}.tools select{min-width:205px}.filters{display:flex;flex-wrap:wrap;gap:9px;margin-bottom:32px}.chip{border:1px solid var(--line);background:transparent;border-radius:0;padding:9px 15px;font-size:11px;letter-spacing:.05em}.chip.on,.chip:hover{background:var(--olive);color:white;border-color:var(--olive)}.grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:30px 20px}.item{min-width:0}.product-img{height:auto;aspect-ratio:3/4;display:block;position:relative;overflow:hidden;background:#e5dbcd;cursor:pointer}.product-img img{width:100%;height:100%;object-fit:cover;object-position:center;display:block;transition:transform .35s}.product-img:hover img{transform:scale(1.04)}.collection-tag{position:absolute;top:10px;left:10px;color:#615846;background:#faf7eeec;font-size:10px;letter-spacing:.09em;text-transform:uppercase;padding:8px 10px}.product-top{padding:15px 0 9px;display:flex;gap:10px;justify-content:space-between;align-items:baseline}.product-top h3{font:500 21px 'Playfair Display',Georgia,serif;margin:0}.price{color:var(--rust);font-size:15px;font-weight:700;white-space:nowrap}.type{font-size:11px;text-transform:uppercase;letter-spacing:.13em;color:var(--muted);margin:0 0 10px}.ask{width:100%;padding:11px;border:1px solid var(--line);background:transparent;color:var(--ink);font-size:12px}.ask:hover{background:var(--olive);color:white}.story{display:grid;grid-template-columns:42% 58%;background:#e8e5d9;margin:90px auto 70px;overflow:hidden}.storytext{padding:70px 55px;display:flex;flex-direction:column;justify-content:center}.storytext p{font:17px/1.8 Georgia,serif;color:#615e54}.storyimage{min-height:440px;position:relative;overflow:hidden}.storyimage img{position:absolute;width:100%;height:100%;object-fit:cover;object-position:center 30%}.footer{padding:38px 0;border-top:1px solid var(--line);display:flex;flex-wrap:wrap;justify-content:space-between;gap:18px;font-size:12px;color:var(--muted)}.footbrand{font:20px Georgia,serif;color:var(--ink)}.footbrand small{font-size:11px}.notice{margin-top:16px;color:#6b635b;line-height:1.6}.empty{grid-column:1/-1;padding:60px 10px;text-align:center;color:var(--muted)}dialog{border:0;padding:0;width:min(760px,94vw);max-height:90vh;background:var(--cream);box-shadow:0 15px 60px #0004}dialog::backdrop{background:#221e1bcc}.modalcontent{display:grid;grid-template-columns:1fr 1fr}.modalcontent img{width:100%;height:480px;object-fit:cover}.modalcopy{padding:38px;display:flex;justify-content:center;flex-direction:column}.modalcopy h3{font:36px 'Playfair Display',Georgia,serif;margin:12px 0}.modalcopy p{line-height:1.7;color:var(--muted)}.close{position:absolute;top:12px;right:12px;border:0;background:var(--cream);font-size:20px;width:35px;height:35px}.modalprice{font-size:22px;color:var(--rust);font-weight:600;margin:20px 0}.info{background:#e9e5dc;padding:10px;font-size:12px;color:#655f55;margin-bottom:18px}.footerlinks{display:flex;gap:17px}.footerlinks a{text-decoration:underline}.small{font-size:12px;color:var(--muted)}@media(max-width:1000px){.grid{grid-template-columns:repeat(3,minmax(0,1fr))}.navitems{display:none}.hero{min-height:470px}.storytext{padding:40px}}@media(max-width:670px){.wrap{width:calc(100% - 28px)}.nav{height:73px}.brand{font-size:19px}.brand small{font-size:10px}.outline{padding:10px;font-size:10px}.hero{grid-template-columns:1fr;margin-top:14px;margin-bottom:50px}.hero-text{padding:42px 28px}.hero h1{font-size:45px}.hero p{font-size:19px}.hero-photo{min-height:420px}.grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:23px 12px}.product-top{display:block}.product-top h3{font-size:19px}.price{display:block;margin-top:6px}.tools select{width:100%}.story{grid-template-columns:1fr;margin-top:56px}.storytext{padding:38px 28px}.storyimage{min-height:350px}.modalcontent{grid-template-columns:1fr}.modalcontent img{height:300px}.modalcopy{padding:24px}.footer{display:block}.footerlinks{margin-top:18px}}
+
+/* Carrito de compras */
+.cart-trigger{border:1px solid var(--line);background:transparent;color:var(--ink);padding:11px 15px;white-space:nowrap;font-size:12px;letter-spacing:.02em}.cart-trigger:hover{border-color:var(--rust)}.cart-trigger b{background:var(--rust);color:white;border-radius:50%;padding:3px 7px;margin-left:5px}.purchase{width:100%;padding:12px;border:0;background:var(--olive);color:#fff;font-size:12px;letter-spacing:.05em}.purchase:hover{background:var(--ink)}.product-actions{display:grid;grid-template-columns:1fr 1fr;gap:7px}.product-actions .ask{font-size:11px}.cart-dialog{margin:0 0 0 auto;width:min(500px,100vw);height:100dvh;max-height:100dvh;overflow:auto;padding:0;border:0;background:var(--white);box-shadow:-10px 0 50px #0003}.cart-dialog::backdrop{background:#25221b85}.cart-inner{padding:26px 26px 35px}.cart-top{display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line);padding-bottom:20px}.cart-top h2{font:32px 'Playfair Display',Georgia,serif;margin:0}.cart-close{font-size:25px;border:0;background:none;padding:3px 9px}.cart-list{display:grid;gap:15px;padding:20px 0}.cart-row{display:grid;grid-template-columns:84px 1fr auto;gap:12px;padding-bottom:15px;border-bottom:1px solid var(--line)}.cart-row img{width:84px;height:108px;object-fit:cover}.cart-name{font:20px 'Playfair Display',Georgia,serif}.cart-sub{font-size:12px;color:var(--muted);margin:5px 0}.qty{display:flex;align-items:center;gap:12px;margin-top:12px}.qty button{width:29px;height:29px;border:1px solid var(--line);background:transparent}.qty span{min-width:15px;text-align:center}.remove{border:0;background:none;text-decoration:underline;color:var(--rust);font-size:11px;padding:0;margin-top:10px}.cart-totals{border-top:1px solid var(--line);padding-top:20px}.cart-total{display:flex;align-items:center;justify-content:space-between;margin-bottom:15px;font-size:17px}.cart-help{font-size:12px;color:var(--muted);line-height:1.6}.cart-buttons{display:grid;gap:10px;margin-top:18px}.cart-buttons button{width:100%}.cart-empty{padding:45px 6px;text-align:center;color:var(--muted)}.toast{position:fixed;bottom:22px;left:50%;transform:translateX(-50%);background:var(--ink);color:#fff;border-radius:5px;padding:13px 18px;z-index:60;box-shadow:0 6px 25px #0004;font-size:13px;max-width:90vw}.toast[hidden]{display:none}.notebanner{background:#f0ebe2;padding:13px 17px;font-size:12px;color:#685e51;line-height:1.5;margin:12px auto 24px}.modal-buttons{display:grid;gap:9px}.subtle-btn{background:transparent;border:1px solid var(--line);padding:13px;font-size:12px}.subtle-btn:hover{background:#eae5dc}@media(max-width:670px){.cart-trigger{padding:9px;font-size:11px}.product-actions{grid-template-columns:1fr}.cart-inner{padding:21px 16px 30px}}
+
+
+/* Carrito integrado en el layout: ocupa su propio espacio, sin superponerse. */
+:root{--cart-panel-width:clamp(320px, 31vw, 440px)}
+body{transition:padding-right .26s ease}
+body.cart-layout-open{padding-right:var(--cart-panel-width)}
+.cart-dialog{
+  position:fixed;
+  inset:0 0 0 auto;
+  top:0;
+  right:0;
+  left:auto;
+  bottom:0;
+  margin:0;
+  width:var(--cart-panel-width);
+  min-width:0;
+  max-width:none;
+  height:100dvh;
+  max-height:100dvh;
+  z-index:30;
+  overflow-y:auto;
+  border-left:1px solid var(--line);
+  background:var(--white);
+  box-shadow:-5px 0 18px #38372e12;
+}
+.cart-dialog:not([open]){display:none}
+.cart-dialog[open]{display:block}
+.cart-dialog::backdrop{background:transparent}
+.cart-dialog .cart-inner{padding:24px 20px 34px}
+.cart-dialog .cart-row{grid-template-columns:72px minmax(0,1fr);gap:12px}
+.cart-dialog .cart-row img{width:72px;height:96px}
+.cart-dialog .cart-name{font-size:18px}
+body.cart-layout-open .grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+body.cart-layout-open .hero{min-height:420px}
+body.cart-layout-open .hero-text{padding:32px 22px}
+body.cart-layout-open .hero h1{font-size:clamp(30px,3.3vw,55px)}
+body.cart-layout-open .storytext{padding:40px 24px}
+body.cart-layout-open .navitems{gap:12px}
+@media(max-width:1200px){
+  body.cart-layout-open .grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  body.cart-layout-open .navitems{display:none}
+}
+@media(max-width:900px){
+  body.cart-layout-open{padding-right:0}
+  .cart-dialog{
+    position:static;
+    inset:auto;
+    width:100%;
+    height:auto;
+    max-height:none;
+    margin:22px auto 0;
+    border-left:0;
+    border-top:2px solid var(--olive);
+    box-shadow:none;
+    overflow:visible;
+  }
+  .cart-dialog .cart-inner{max-width:720px;margin:auto;padding:26px 22px 35px}
+  body.cart-layout-open .grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  body.cart-layout-open .hero{min-height:unset}
+  body.cart-layout-open .hero h1{font-size:clamp(36px,6vw,64px)}
+}
+@media(max-width:540px){
+  body.cart-layout-open .grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .cart-dialog .cart-row{grid-template-columns:72px minmax(0,1fr)}
+}
