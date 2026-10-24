@@ -68,3 +68,39 @@ body.cart-layout-open .navitems{gap:12px}
   body.cart-layout-open .grid{grid-template-columns:repeat(2,minmax(0,1fr))}
   .cart-dialog .cart-row{grid-template-columns:72px minmax(0,1fr)}
 }
+
+/* Catálogo: cuatro imágenes uniformes por fila, con fondo neutro cuando son altas. */
+@media (min-width:1001px){
+  .grid, body.cart-layout-open .grid{grid-template-columns:repeat(4,minmax(0,1fr));gap:26px 15px}
+}
+@media (min-width:671px) and (max-width:1000px){
+  .grid, body.cart-layout-open .grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+}
+@media (max-width:670px){
+  .grid, body.cart-layout-open .grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+.item{position:relative;min-width:0}
+.product-img{width:100%;height:auto;aspect-ratio:3/4;background:#eae4da;border:0;padding:0;display:block}
+.product-img img{width:100%;height:100%;object-fit:contain;object-position:center;background:#eae4da}
+.product-img:hover img{transform:none}
+.zoom-product{position:absolute;right:10px;top:10px;width:38px;height:38px;border:1px solid #ded5c7;border-radius:50%;background:#fffdfaf0;color:#38372e;display:grid;place-items:center;z-index:2;box-shadow:0 2px 8px #0002}
+.zoom-product:hover,.zoom-product:focus-visible{background:#38372e;color:white}
+.zoom-product svg{width:19px;height:19px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round}
+/* También mostrar la foto completa dentro de la ficha existente. */
+.modalcontent img{object-fit:contain;background:#eae4da}
+/* Ampliación centrada, grande y sin recorte. */
+.zoom-dialog{width:min(1100px,96vw);height:min(92dvh,960px);max-width:96vw;max-height:92dvh;margin:auto;border:0;border-radius:6px;padding:16px;background:#f6f2ec;overflow:hidden;box-shadow:0 18px 65px #0006;position:fixed}
+.zoom-dialog::backdrop{background:rgba(22,20,17,.82)}
+.zoom-dialog[open]{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px}
+.zoom-dialog img{display:block;width:100%;height:calc(100% - 34px);object-fit:contain;object-position:center}
+.zoom-caption{margin:0;text-align:center;font-size:13px;color:#38372e}
+.zoom-close{position:absolute;right:15px;top:14px;z-index:3;border:0;border-radius:50%;width:38px;height:38px;background:#fffdfa;color:#38372e;font-size:27px;line-height:1}
+@media(max-width:540px){.zoom-product{width:34px;height:34px;right:7px;top:7px}.zoom-dialog{padding:10px}}
+
+/* Tallas y disponibilidad de cada modelo */
+.size-label{display:block;font-size:12px;font-weight:600;margin:10px 0 5px;color:#514c42}
+.size-select{width:100%;padding:9px 10px;border:1px solid #d5cbbb;border-radius:5px;background:#fffdfa;color:#36332e;font:inherit;font-size:13px;margin-bottom:10px}
+.size-select:disabled{opacity:.65}
+.cart-stock-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:7px}
+.cart-stock-actions button{font-size:12px}
+.cart-stock-actions button:disabled{opacity:.4;cursor:not-allowed}
